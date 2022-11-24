@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80b192</color>
+    <color name="colorPrimaryDark">#80b192</color>
+    <color name="colorAccent">#be60b0</color>
+    <color name="Background">#8bc3d7</color>
+    <color name="floatingbut">#be60b0</color>
+
+</resources>

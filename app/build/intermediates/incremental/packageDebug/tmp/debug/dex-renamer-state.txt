@@ -1,0 +1,4 @@
+#Tue Jan 19 22:17:10 CST 2021
+base.0=C\:\\Users\\kbanb\\Desktop\\COMSIIA\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

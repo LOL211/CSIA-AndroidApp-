@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kushbanbah1.comsiia"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Welcome"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.Homework"
+            android:label="Homework Menu"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.MainMenu" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.ManageHomework"
+            android:label="Homework"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.Homework" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.ManageClass"
+            android:label="Class"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.Homework" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.DayTasks"
+            android:label="Day Tasks"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.MainMenu" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.Add_Homework"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.ManageHomework" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.Add_class"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.ManageClass" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.edit_hw"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.ManageHomework" />
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.edit_class"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.ManageClass" />
+
+        <receiver android:name="com.example.kushbanbah1.comsiia.firststart" >
+            <intent-filter>
+                <action android:name="SETUPALRM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.kushbanbah1.comsiia.NotifClass" >
+            <intent-filter>
+                <action android:name="ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.kushbanbah1.comsiia.add_daytask"
+            android:parentActivityName="com.example.kushbanbah1.comsiia.DayTasks" />
+
+        <receiver android:name="com.example.kushbanbah1.comsiia.NotifDayTask" >
+            <intent-filter>
+                <action android:name="DAYALARM" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.kushbanbah1.comsiia.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

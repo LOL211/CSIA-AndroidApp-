@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="Days">
+    <item>"Block 1 Day 1"</item>
+    <item>"Block 2 Day 1"</item>
+    <item>"Block 3 Day 1"</item>
+    <item>"Block 4 Day 1"</item>
+    <item>"Block 1 Day 2"</item>
+    <item>"Block 2 Day 2"</item>
+    <item>"Block 3 Day 2"</item>
+    <item>"Block 4 Day 2"</item>
+    <item>"Outside Schedule"</item>
+</string-array>
+
+
+</resources>

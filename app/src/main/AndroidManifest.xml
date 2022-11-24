@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kushbanbah1.comsiia">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Welcome"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassHomeworkMenu"
+            android:label="Homework Menu"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".HomeworkClassView"
+            android:label="Homework"
+            android:parentActivityName=".ClassHomeworkMenu" />
+        <activity
+            android:name=".SchoolClassView"
+            android:label="Class"
+            android:parentActivityName=".ClassHomeworkMenu" />
+        <activity
+            android:name=".DayTaskView"
+            android:label="Day Tasks"
+            android:parentActivityName=".MainMenu" />
+        <activity
+            android:name=".AddEditHomework"
+            android:parentActivityName=".HomeworkClassView" />
+        <activity
+            android:name=".AddEditSchoolClass"
+            android:parentActivityName=".SchoolClassView" />
+
+        <receiver android:name=".AlarmSetupSchoolClass">
+            <intent-filter>
+                <action android:name="SETUPALRM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".NotificationSchooLClass">
+            <intent-filter>
+                <action android:name="ALARM" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AddEditDayTasks"
+            android:label="Day Tasks"
+            android:parentActivityName=".DayTaskView" />
+
+        <receiver android:name=".NotifDayTask">
+            <intent-filter>
+                <action android:name="DAYALARM" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".HelpPage" android:parentActivityName=".MainMenu"/>
+    </application>
+
+</manifest>

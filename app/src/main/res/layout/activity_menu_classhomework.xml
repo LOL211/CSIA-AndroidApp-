@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homework"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_weight="1"
+
+        android:background="@color/Background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/up_hw"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="#80B192"
+            android:fontFamily="casual"
+            android:text="Upcoming Homework"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+
+             />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="50"
+            android:fontFamily="casual"
+            android:onClick="manageHW"
+            android:text="Manage Homework"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="casual"
+            android:onClick="manageClass"
+
+            android:text="Manage Classes"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_menu_help"
+        app:backgroundTint="?android:attr/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
